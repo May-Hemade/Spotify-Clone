@@ -14,22 +14,37 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row">
-            <ul class="col-2 nav flex-column side-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+            <dev class="col-2 nav flex-column side-nav side-menu">
+                <div class="container nav-main-box">
+                    <div class="logo-container">
+                        <img class="img-fluid my-4" src="/mp_assets/Spotify_Logo_RGB_White.png" alt="logo-container" />
+                    </div>
+                    <div class="main-links d-flex">
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-house-fill text-muted mr-3"></i>Home
+                        </a>
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-search text-muted mr-3"></i>Search
+                        </a>
+
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-collection-fill text-muted mr-3"></i>Library
+                        </a>
+                    </div>
+                    <div class="second-links mt-4 d-flex">
+                        <a class="text-muted font-weight-bolder" href="#">
+                            <i class="bi bi-plus text-black bg-white mr-2"></i> Create
+                            Playlist
+                        </a>
+                        <a class="text-muted font-weight-bolder" href="#">
+                            <img class="img-fluid w-25" src="/mp_assets/liked songs.jpg" alt="" />
+                            Liked Songs
+                        </a>
+                    </div>
+                </div>
+            </dev>
 
             <div class="col">
                 <ul class="nav top-nav">
