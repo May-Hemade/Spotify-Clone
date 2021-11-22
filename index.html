@@ -12,24 +12,39 @@
     <title>Spotify</title>
 </head>
 
-<body>
+<body class="main-container">
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row">
-            <ul class="col-2 nav flex-column side-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+            <dev class="col-2 nav flex-column side-nav side-menu">
+                <div class="container nav-main-box">
+                    <div class="logo-container">
+                        <img class="img-fluid my-4" src="/mp_assets/Spotify_Logo_RGB_White.png" alt="logo-container" />
+                    </div>
+                    <div class="main-links d-flex">
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-house-fill text-muted mr-3"></i>Home
+                        </a>
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-search text-muted mr-3"></i>Search
+                        </a>
+
+                        <a class="text-muted font-weight-bold" href="#">
+                            <i class="bi bi-collection-fill text-muted mr-3"></i>Library
+                        </a>
+                    </div>
+                    <div class="second-links mt-4 d-flex">
+                        <a class="text-muted font-weight-bolder" href="#">
+                            <i class="bi bi-plus text-black bg-white mr-2"></i> Create
+                            Playlist
+                        </a>
+                        <a class="text-muted font-weight-bolder" href="#">
+                            <img class="img-fluid w-25" src="/mp_assets/liked songs.jpg" alt="" />
+                            Liked Songs
+                        </a>
+                    </div>
+                </div>
+            </dev>
 
             <div class="col">
                 <ul class="nav top-nav">
@@ -47,8 +62,8 @@
                     </li>
                 </ul>
 
-                <div class="row-header d-flex justify-content-between p-3">
-                    <h3> Recently played </h3>
+                <div class="row-header d-flex justify-content-between p-3 align-items-center">
+                    <h2> Recently played </h2>
                     <a class="text-muted more-nav">SEE ALL </a>
                 </div>
                 <div class="container-fluid">
@@ -89,13 +104,14 @@
                                 <div class="card-image-container">
                                     <div class="play-btn"></div>
                                     <div class="ratio ratio-1x1">
-                                        <img src="images/img3.jpg" class="card-img-top py-3 px-3 card-image-rounded"
-                                            alt="...">
+                                        <img src="images/liked songs.jpg"
+                                            class="card-img-top py-3 px-3 card-image-rounded" alt="...">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <h6 class="card-title-music">Burning Jazz-rock</h6>
-                                    <p class="card-text truncate-2-lines">This is the most interesting Track eva!</p>
+                                    <p class="card-text truncate-2-lines ">This is the most interesting
+                                        Track eva!</p>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +120,7 @@
                                 <div class="card-image-container">
                                     <div class="play-btn"></div>
                                     <div class="ratio ratio-1x1">
-                                        <img src="images/img5.jpg" class="card-img-top py-3 px-3 card-image-rounded"
+                                        <img src="images/img5.jpg" class="card-img-top py-3 px-3  img-rounded-full"
                                             alt="...">
                                     </div>
                                 </div>
@@ -148,8 +164,8 @@
                 </div>
 
                 <div>
-                    <div class="row-header d-flex justify-content-between p-3">
-                        <h3> Shows to try </h3>
+                    <div class="row-header d-flex justify-content-between p-3 align-items-center">
+                        <h2> Shows to try </h2>
                         <a class="text-muted more-nav"> SEE ALL </a>
                     </div>
                     <div class="container-fluid">
@@ -159,7 +175,7 @@
                                     <div class="card-image-container">
                                         <div class="play-btn"></div>
                                         <div class="ratio ratio-1x1">
-                                            <img src="images/img8.jpg" class="card-img-top py-3 px-3 card-image-rounded"
+                                            <img src="images/img9.jpg" class="card-img-top py-3 px-3 card-image-rounded"
                                                 alt="...">
                                         </div>
                                     </div>
@@ -171,22 +187,6 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-none d-sm-block">
-                                <div class="card">
-                                    <div class="card-image-container">
-                                        <div class="play-btn"></div>
-                                        <div class="ratio ratio-1x1">
-                                            <img src="images/img9.jpg" class="card-img-top py-3 px-3 card-image-rounded"
-                                                alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-tit">Burning Jazz-rock</h6>
-                                        <p class="card-text truncate-2-lines">This is the most interesting Track eva!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-none d-md-block">
                                 <div class="card">
                                     <div class="card-image-container">
                                         <div class="play-btn"></div>
@@ -218,12 +218,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-none d-lg-block">
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-none d-md-block">
                                 <div class="card">
                                     <div class="card-image-container">
                                         <div class="play-btn"></div>
                                         <div class="ratio ratio-1x1">
-                                            <img src="images/img12.jpg"
+                                            <img src="images/img15.jpg"
                                                 class="card-img-top py-3 px-3 card-image-rounded" alt="...">
                                         </div>
                                     </div>
@@ -241,6 +241,22 @@
                                         <div class="ratio ratio-1x1">
                                             <img src="images/img14.jpg"
                                                 class="card-img-top py-3 px-3 card-image-rounded" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-tit">Burning Jazz-rock</h6>
+                                        <p class="card-text truncate-2-lines">This is the most interesting Track eva!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-none d-lg-block">
+                                <div class="card">
+                                    <div class="card-image-container">
+                                        <div class="play-btn"></div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="images/img8.jpg" class="card-img-top py-3 px-3 card-image-rounded"
+                                                alt="...">
                                         </div>
                                     </div>
                                     <div class="card-body">
