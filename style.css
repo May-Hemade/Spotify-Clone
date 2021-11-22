@@ -1,5 +1,18 @@
-body {
-  background-color: #000000;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #181818;
+  --spotify-darker-bg: #121212;
+}
+
+#main-container {
+  background-color: var(--spotify-darker-bg);
+  font-family: var(--main-font);
 }
 
 .nav-main-box {
@@ -11,8 +24,42 @@ body {
   flex-direction: column;
 }
 
-a:hover {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 200;
+a {
+  /* text-decoration: none; */
+  color: var(--spotify-grey);
+  display: block;
+  padding-bottom: 10px;
+  font-weight: bolder;
 }
+#main-container a:hover {
+  text-decoration: none;
+  /* font-weight: 200; */
+  color: rgb(255, 255, 255);
+  font-size: medium;
+}
+.main-links a,
+.second-links a,
+.list-of-songs a,
+.install-app {
+  transition: color 0.5s;
+}
+.likedPick {
+  /* this is for img liked songs */
+  width: 27px;
+}
+
+i {
+  /* for all icons */
+  font-size: 1.5rem;
+}
+
+.second-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+/* .list-of-songs {
+  font-size: 0.8rem;
+} */
