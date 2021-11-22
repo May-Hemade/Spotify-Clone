@@ -1,0 +1,114 @@
+html,
+body {
+  background-image: linear-gradient(#212121, #121212);
+  line-height: 1.6;
+  color: white;
+  height: 100%;
+}
+
+.Albumcard{
+
+  background-color: #3A2626 !important;
+}
+
+.arrownext{
+  margin-left: 20%;
+}
+.card {
+  background-color: #121212;
+}
+
+.truncate-2-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.Albumcard{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.card-image-rounded {
+  border-radius: 10%;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.card-img-top {
+  z-index: 1;
+}
+
+.play-btn {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  right: 10%;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out 0.4s, opacity 0.5s ease-in-out 0.5s;
+}
+
+.play-btn:hover {
+  border: none;
+  opacity: 1;
+}
+
+.play-btn:not(:hover) {
+  background: rgb(11, 221, 29);
+  opacity: 0;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 2px;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent white;
+}
+
+.card:hover {
+  background-color: #333333;
+}
+
+.card:hover .play-btn {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.row-overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  object-fit: none;
+  object-position: center;
+}
+
+.card-title-music {
+  font-style: bold;
+}
+
+.more-nav {
+  text-decoration: none;
+}
+
+.more-nav:hover {
+  text-decoration: underline;
+}
