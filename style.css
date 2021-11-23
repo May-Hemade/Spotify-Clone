@@ -16,6 +16,10 @@ body {
     "MS Gothic", sans-serif, "Montserrat";
 }
 
+.artist-body {
+  background-color: black;
+}
+
 .card {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -343,7 +347,8 @@ a:hover {
   margin-right: 1rem;
 }
 
-i {
+.main-links i,
+.second-links i {
   /* for all icons */
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -354,4 +359,102 @@ i {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
+}
+
+/* Don's sideBar css ends here */
+
+/* Don's Jumbotron starts here for ARtists page */
+#buttonsID {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--spotify-white);
+}
+.jumbo-img {
+  opacity: 0.6;
+}
+.verified-artist-container {
+  position: absolute;
+  top: 32%;
+  left: 19%;
+  z-index: 2;
+  font-size: smaller;
+}
+.verified-artist-container i {
+  color: rgb(101, 101, 233);
+}
+.jumbo-title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 58px;
+  top: 36%;
+  left: 19%;
+  color: var(--spotify-white);
+}
+.jumbo-paragraph {
+  position: absolute;
+  top: 47%;
+  left: 18%;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Don;s jumbo-style ends here */
+
+.table-image {
+  height: 45px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+th,
+td {
+  color: white;
+  border: none;
+}
+
+.play-circle {
+  font-size: 4ch;
+
+  color: white;
+
+  padding: 13px;
+  position: relative;
+}
+
+.follow-btn {
+  border: 1px solid #999;
+  border-radius: 8%;
+}
+
+.img-artist-pick {
+  height: 75px;
+}
+
+.img-artist-small {
+  height: 20px;
+  border-radius: 50%;
+}
+
+.muted-text {
+  color: #999;
+}
+.played-track {
+  color: #1db954;
+}
+.song-name-table:hover {
+  color: #1db954;
+}
+.pause-btn {
+  background-color: #1db954;
+  border-radius: 50%;
+  border: 2px solid #1db954;
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+.dots {
+  font-size: 3ch;
+}
+.bold-text {
+  font-weight: bold;
+  letter-spacing: 0.1ch;
 }
