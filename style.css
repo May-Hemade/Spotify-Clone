@@ -4,7 +4,9 @@
 
 html,
 body {
-  background-image: linear-gradient(#212121, #121212);
+  /* use this bg-lin-gradient, if you dont' mind ofc */
+  /* background: linear-gradient(rgba(171, 44, 28, 1), rgba(18, 18, 18, 1) 50%); */
+  background-image: linear-gradient(#3a1c1c, #121212);
   line-height: 1.6;
   color: white;
   height: 100%;
@@ -121,7 +123,7 @@ body {
 } */
 
 .music-player {
-  background-color: #111;
+  background-color: var(--spotify-darker-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,4 +271,73 @@ a:hover {
 
 .img-rounded-full {
   border-radius: 50%;
+}
+/* Don css starts here */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #000000;
+  --spotify-darker-bg: #121212;
+}
+
+#main-container {
+  background-color: var(--spotify-dark-bg);
+  font-family: var(--main-font);
+  /* height: 140vh; */
+}
+
+.nav-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-links {
+  flex-direction: column;
+}
+
+#main-container a {
+  text-decoration: none;
+  color: var(--spotify-grey);
+  display: block;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+#main-container a:hover {
+  text-decoration: none;
+  /* font-weight: 200; */
+  color: rgb(255, 255, 255);
+  /* font-size: medium; */
+}
+.list-of-songs a {
+  /* only for bottom list of songs on side bar */
+  font-size: 0.8rem;
+}
+.main-links a,
+.second-links a,
+.list-of-songs a,
+.install-app {
+  transition: color 0.4s;
+}
+.likedPick {
+  /* this is only for (img liked) songs */
+  width: 27px;
+  margin-right: 1rem;
+}
+
+i {
+  /* for all icons */
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.second-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
 }
