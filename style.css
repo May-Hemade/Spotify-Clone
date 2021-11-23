@@ -394,6 +394,7 @@ td {
 }
 .dots {
   font-size: 3ch;
+  letter-spacing: 0.2ch;
 }
 .bold-text {
   font-weight: bold;
