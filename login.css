@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--main-font);
-  font-weight: bolder;
+  font-weight: 500;
 }
 #logo img {
   max-width: 200px;
@@ -45,7 +45,6 @@ body {
 #apple-button:hover,
 #sign-up-button:hover {
   font-size: 1.1rem;
-  transition: 0.2s;
 }
 .or-divider {
   display: flex;
