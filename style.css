@@ -32,6 +32,16 @@ body {
   background-color: #73295E;
 }
 
+td, tr{
+  color: white;
+  font-size: 14px;
+  border-color: #171717;
+}
+
+.artist-link, .song-duration {
+  font-size: 10px;
+}
+
 .Albumcard p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
