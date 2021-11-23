@@ -24,6 +24,17 @@ body {
   font-weight: 400;
 }
 
+.Albumcard{
+
+  background-color: #3A2626 !important;
+}
+
+.Albumcard p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 .truncate-2-lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
