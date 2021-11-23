@@ -348,6 +348,9 @@ a:hover {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
+.list-of-songs {
+  overflow-y: auto;
+}
 
 .second-links {
   margin-top: 20px;
@@ -365,7 +368,7 @@ a:hover {
   color: var(--spotify-white);
 }
 .jumbo-img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .verified-artist-container {
   position: absolute;
@@ -393,7 +396,19 @@ a:hover {
 }
 
 /* Don;s jumbo-style ends here */
+/* Sumroooz css starts here */
 
+.profil-btn {
+  left: 120vh;
+  border: 1px solid rgba(128, 128, 128, 0);
+  border-radius: 55px;
+  padding: 0px 2px 0 2px;
+  background-color: black;
+  padding-left: 0px;
+  z-index: 1;
+  padding: 0px;
+}
+/* End of Sumrooz's css */
 .table-image {
   height: 45px;
   object-fit: cover;
