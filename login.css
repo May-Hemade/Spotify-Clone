@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #bdbbbb;
+  --spotify-dark-bg: #181818;
+  --spotify-darker-bg: #121212;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: bolder;
+}
+#logo img {
+  max-width: 200px;
+}
+
+.login-column h6 {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.full-width {
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 0;
+  margin: 7px 0;
+  font-weight: 600;
+}
+#fb-button {
+  background-color: #3e5a9b;
+  color: white;
+}
+
+#apple-button {
+  background-color: black;
+  color: white;
+}
+
+/* ther is a minor issue, hover affecting to other elements */
+#fb-button:hover,
+#apple-button:hover,
+#sign-up-button:hover {
+  font-size: 1.1rem;
+  transition: 0.2s;
+}
+.or-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hr-line {
+  width: 41%;
+  border-top: 1px solid var(--spotify-white);
+  transform: translateY(50%);
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid var(--spotify-white);
+  margin: 5px 0;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+::placeholder {
+  color: var(--spotify-white);
+}
