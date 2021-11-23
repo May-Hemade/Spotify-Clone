@@ -6,11 +6,10 @@ html,
 body {
   /* use this bg-lin-gradient, if you dont' mind ofc */
   /* background: linear-gradient(rgba(171, 44, 28, 1), rgba(18, 18, 18, 1) 50%); */
-  /* background-image: linear-gradient(#3a1c1c, #121212); */
-  background-color: rgb(20, 20, 20);
+  background-image: linear-gradient(#3a1c1c, #121212);
   line-height: 1.6;
   color: white;
-  height: 100%;
+
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro",
@@ -25,6 +24,19 @@ body {
   font-weight: 400;
 }
 
+.Albumcard {
+  background-color: #3a2626 !important;
+}
+.ContainerBody {
+  background-color: #73295e;
+}
+
+.Albumcard p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 .truncate-2-lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -336,6 +348,9 @@ a:hover {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
+.list-of-songs {
+  overflow-y: auto;
+}
 
 .second-links {
   margin-top: 20px;
@@ -353,7 +368,7 @@ a:hover {
   color: var(--spotify-white);
 }
 .jumbo-img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .verified-artist-container {
   position: absolute;
@@ -379,8 +394,21 @@ a:hover {
   left: 18%;
   font-family: "Rubik", sans-serif;
 }
-/* Don;s jumbo-style ends here */
 
+/* Don;s jumbo-style ends here */
+/* Sumroooz css starts here */
+
+.profil-btn {
+  left: 120vh;
+  border: 1px solid rgba(128, 128, 128, 0);
+  border-radius: 55px;
+  padding: 0px 2px 0 2px;
+  background-color: black;
+  padding-left: 0px;
+  z-index: 1;
+  padding: 0px;
+}
+/* End of Sumrooz's css */
 .table-image {
   height: 45px;
   object-fit: cover;
@@ -422,7 +450,9 @@ td {
 .played-track {
   color: #1db954;
 }
-
+.song-name-table:hover {
+  color: #1db954;
+}
 .pause-btn {
   background-color: #1db954;
   border-radius: 50%;
@@ -437,4 +467,8 @@ td {
 .bold-text {
   font-weight: bold;
   letter-spacing: 0.1ch;
+}
+
+.jmb-position {
+  margin: 0;
 }
