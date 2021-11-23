@@ -5,8 +5,10 @@
 html,
 body {
   /* use this bg-lin-gradient, if you dont' mind ofc */
+
   /* background: linear-gradient(rgba(171, 44, 28, 1), rgba(18, 18, 18, 1) 50%); */
   background-image: linear-gradient(#3a1c1c, #121212);
+
   line-height: 1.6;
   color: white;
   height: 100%;
