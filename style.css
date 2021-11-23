@@ -28,6 +28,9 @@ body {
 
   background-color: #3A2626 !important;
 }
+.ContainerBody{
+  background-color: #73295E;
+}
 
 .Albumcard p {
   display: -webkit-box;
