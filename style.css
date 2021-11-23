@@ -27,7 +27,7 @@ body {
   overflow: hidden;
 }
 
-.Albumcard{
+.Albumcard p{ 
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
