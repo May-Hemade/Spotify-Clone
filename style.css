@@ -378,7 +378,7 @@ a:hover {
   top: 47%;
   left: 18%;
   font-family: "Rubik", sans-serif;
-
+}
 
 .table-image {
   height: 45px;
@@ -436,5 +436,4 @@ td {
 .bold-text {
   font-weight: bold;
   letter-spacing: 0.1ch;
-
 }
