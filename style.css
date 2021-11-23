@@ -6,7 +6,8 @@ html,
 body {
   /* use this bg-lin-gradient, if you dont' mind ofc */
   /* background: linear-gradient(rgba(171, 44, 28, 1), rgba(18, 18, 18, 1) 50%); */
-  background-image: linear-gradient(#3a1c1c, #121212);
+  /* background-image: linear-gradient(#3a1c1c, #121212); */
+  background-color: rgb(20, 20, 20);
   line-height: 1.6;
   color: white;
   height: 100%;
@@ -329,7 +330,8 @@ a:hover {
   margin-right: 1rem;
 }
 
-i {
+.main-links i,
+.second-links i {
   /* for all icons */
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -340,4 +342,39 @@ i {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
+}
+/* Don's sideBar css ends here */
+
+/* Don's Jumbotron starts here for ARtists page */
+#buttonsID {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--spotify-white);
+}
+.jumbo-img {
+  opacity: 0.6;
+}
+.verified-artist-container {
+  position: absolute;
+  top: 32%;
+  left: 19%;
+  z-index: 2;
+  font-size: smaller;
+}
+.verified-artist-container i {
+  color: rgb(101, 101, 233);
+}
+.jumbo-title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 58px;
+  top: 36%;
+  left: 19%;
+  color: var(--spotify-white);
+}
+.jumbo-paragraph {
+  position: absolute;
+  top: 47%;
+  left: 18%;
+  font-family: "Rubik", sans-serif;
 }
