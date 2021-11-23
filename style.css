@@ -343,6 +343,7 @@ a:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
 }
+
 /* Don's sideBar css ends here */
 
 /* Don's Jumbotron starts here for ARtists page */
@@ -377,4 +378,63 @@ a:hover {
   top: 47%;
   left: 18%;
   font-family: "Rubik", sans-serif;
+
+
+.table-image {
+  height: 45px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+th,
+td {
+  color: white;
+  border: none;
+}
+
+.play-circle {
+  font-size: 4ch;
+
+  color: white;
+
+  padding: 13px;
+  position: relative;
+}
+
+.follow-btn {
+  border: 1px solid #999;
+  border-radius: 8%;
+}
+
+.img-artist-pick {
+  height: 75px;
+}
+
+.img-artist-small {
+  height: 20px;
+  border-radius: 50%;
+}
+
+.muted-text {
+  color: #999;
+}
+.played-track {
+  color: #1db954;
+}
+
+.pause-btn {
+  background-color: #1db954;
+  border-radius: 50%;
+  border: 2px solid #1db954;
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+.dots {
+  font-size: 3ch;
+}
+.bold-text {
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+
 }
