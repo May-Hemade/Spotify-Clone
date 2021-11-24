@@ -28,33 +28,6 @@ body {
   background-color: #3a2626 !important;
 }
 
-
-
-.ProfileBtn{
-  padding-left: 3% !important;
-padding-top: 0% !important;
-  color: white !important;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border: 1px solid gray;
-  height: 40px;
-  width: 170px;
-  background-color: #120202 !important;
-
-}
-
-  
-.main-Body{
-  background: rgb(18,18,18);
-background: -moz-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
-}
-
-
 td,
 tr {
   color: white;
