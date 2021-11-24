@@ -142,6 +142,7 @@ tr {
 
 
 
+
 .music-player{
     background-color: #111;
     display: flex;
@@ -159,8 +160,7 @@ tr {
     box-sizing: border-box;
     font-family: "circular std book", sans-serif;
 }
-
-.song-bar{
+    .song-bar{
     position: absolute;
     left: 1em;
 
@@ -516,6 +516,7 @@ td {
 .jmb-position {
   margin: 0;
 }
-.table-container-play {
-  height: 61%;
+
+#spacing-div {
+  height: 7rem;
 }
