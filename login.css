@@ -9,9 +9,11 @@
   --spotify-darker-bg: #121212;
 }
 
+html,
 body {
   font-family: var(--main-font);
   font-weight: 500;
+  height: 100%;
 }
 #logo img {
   max-width: 200px;
@@ -122,4 +124,23 @@ input[type="password"] {
 
 .w-500-px {
   width: 500px !important;
+}
+
+.the-cool-container {
+  float: center;
+  width: 300px;
+
+  padding: 10px;
+  height: 100%;
+}
+.content-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-container {
+  background-color: #1db954 !important;
+  border: #1db954;
 }
