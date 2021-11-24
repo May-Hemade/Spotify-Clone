@@ -28,6 +28,28 @@ body {
   background-color: #3a2626 !important;
 }
 
+.navbar-nav .dropdown-menu {
+  inset: 0 auto auto -20px !important;
+
+}
+.ProfileBtn{
+  padding-left: 3% !important;
+padding-top: 0% !important;
+  color: white !important;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid gray;
+  height: 40px;
+  width: 170px;
+  background-color: #120202 !important;
+
+}
+.dropdown-menu li{
+
+color: white !important;
+}
 
 td, tr{
   color: white;
