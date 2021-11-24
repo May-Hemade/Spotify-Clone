@@ -1,24 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+
 html,
 body {
-  background-image: linear-gradient(#212121, #121212);
+  /* use this bg-lin-gradient, if you dont' mind ofc */
+  /* background: linear-gradient(rgba(171, 44, 28, 1), rgba(18, 18, 18, 1) 50%); */
+  background-image: linear-gradient(#3a1c1c, #121212);
   line-height: 1.6;
   color: white;
-  height: 100%;
+
   margin: 0;
   padding: 0;
+  font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro",
+    "MS Gothic", sans-serif, "Montserrat";
 }
 
 .card {
-  background-color: #121212;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card p {
+  color: #b3b3b3;
+  font-weight: 400;
 }
 
+.Albumcard {
+  background-color: #3a2626 !important;
+}
+
+td,
+tr {
+  color: white;
+  font-size: 14px;
+  border-color: #171717;
+}
+
+.artist-link,
+.song-duration {
+  font-size: 10px;
+}
+
+.Albumcard p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 .truncate-2-lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-
+.card h2 {
+  font-weight: 400;
+}
 .card-image-rounded {
   border-radius: 10%;
 }
@@ -84,7 +120,7 @@ body {
 }
 
 .card-img-top {
-  object-fit: none;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -93,6 +129,7 @@ body {
 }
 
 .more-nav {
+  font-size: small;
   text-decoration: none;
 }
 
@@ -100,141 +137,346 @@ body {
   text-decoration: underline;
 }
 
-
 @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 
-*{
-    box-sizing: border-box;
-    font-family: "circular std book", sans-serif;
+/* * {
+  box-sizing: border-box;
+  font-family: "circular std book", sans-serif;
+} */
+
+.music-player {
+  background-color: var(--spotify-darker-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 7rem;
+  padding: 1em;
+  color: #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
+.song-bar {
+  position: absolute;
+  left: 1em;
 
-
-.music-player{
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 7rem;
-    padding: 1em;
-    color: #ddd;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 25%;
 }
 
-.song-bar{
-    position: absolute;
-    left: 1em;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.5rem;
-    width: 25%;
+.song-infos {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
-.song-infos{
-    display: flex;
-    align-items: center;
-    gap: 1em;
+.image-container {
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-.image-container{
-    flex-shrink: 0;
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.image-container{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .song-description p {
-    margin: 0.2em;
+  margin: 0.2em;
 }
 
-.title, .artist{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
+.title,
+.artist {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
-.artist{
-    color: #999;
+.artist {
+  color: #999;
 }
 
-.icons{
-    display: flex;
-    gap: 1em;
+.icons {
+  display: flex;
+  gap: 1em;
 }
-.progress-controller{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
-    color:#999
-}
-
-.control-buttons{
-    display: flex;
-    align-items: center;
-    gap: 2em;
+.progress-controller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  color: #999;
 }
 
-.play-pause{
-    display: inline-block;  
-    padding: 1em;
-    background-color: #999;  
-    color: #111;
-    border-radius: 50%;
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
-.progress-container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+.play-pause {
+  display: inline-block;
+  padding: 1em;
+  background-color: #999;
+  color: #111;
+  border-radius: 50%;
 }
 
-.progress-bar{
-    height: 4px;
-    border-radius: 10px;
-    width: 30%;
-    background-color: #999 !important;
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
-.progress{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    background-color: #999;
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #999 !important;
 }
 
-.other-features{
-    position: absolute;
-    right: 1em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+.progress {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: #999;
 }
 
-.volume-bar{
-    display: flex;
-    align-items: center;
-    gap: 0.7em;
+.other-features {
+  position: absolute;
+  right: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
-.volume-bar .progress-bar{
-    width: 6em;
+.volume-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
 }
 
+.volume-bar .progress-bar {
+  width: 6em;
+}
 
+.nav-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-links {
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+}
+
+.side-menu {
+  background-color: black;
+}
+
+.img-rounded-full {
+  border-radius: 50%;
+}
+/* Don css starts here */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #000000;
+  --spotify-darker-bg: #121212;
+}
+
+#main-container {
+  background-color: var(--spotify-dark-bg);
+  font-family: var(--main-font);
+  /* height: 140vh; */
+}
+
+.nav-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-links {
+  flex-direction: column;
+}
+
+#main-container a {
+  text-decoration: none;
+  color: var(--spotify-grey);
+  display: block;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+#main-container a:hover {
+  text-decoration: none;
+  /* font-weight: 200; */
+  color: rgb(255, 255, 255);
+  /* font-size: medium; */
+}
+.list-of-songs a {
+  /* only for bottom list of songs on side bar */
+  font-size: 0.8rem;
+}
+.main-links a,
+.second-links a,
+.list-of-songs a,
+.install-app {
+  transition: color 0.4s;
+}
+.likedPick {
+  /* this is only for (img liked) songs */
+  width: 27px;
+  margin-right: 1rem;
+}
+
+.main-links i,
+.second-links i {
+  /* for all icons */
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.list-of-songs {
+  overflow-y: auto;
+}
+
+.second-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+/* Don's sideBar css ends here */
+
+/* Don's Jumbotron starts here for ARtists page */
+#buttonsID {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--spotify-white);
+}
+.jumbo-img {
+  opacity: 0.8;
+}
+.verified-artist-container {
+  position: absolute;
+  top: 32%;
+  left: 19%;
+  z-index: 2;
+  font-size: smaller;
+}
+.verified-artist-container i {
+  color: rgb(101, 101, 233);
+}
+.jumbo-title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 58px;
+  top: 36%;
+  left: 19%;
+  color: var(--spotify-white);
+}
+.jumbo-paragraph {
+  position: absolute;
+  top: 47%;
+  left: 18%;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Don;s jumbo-style ends here */
+/* Sumroooz css starts here */
+
+.profil-btn {
+  left: 120vh;
+  border: 1px solid rgba(128, 128, 128, 0);
+  border-radius: 55px;
+  padding: 0px 2px 0 2px;
+  background-color: black;
+  padding-left: 0px;
+  z-index: 1;
+  padding: 0px;
+}
+/* End of Sumrooz's css */
+.table-image {
+  height: 45px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+th,
+td {
+  color: white;
+  border: none;
+}
+
+.pause-icon {
+  font-size: 3ch;
+}
+
+.pause-btn {
+  background-color: #1db954;
+  border-radius: 50%;
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.follow-btn {
+  border: 1px solid #999;
+  border-radius: 8%;
+}
+
+.img-artist-pick {
+  height: 75px;
+}
+
+.img-artist-small {
+  height: 20px;
+  border-radius: 50%;
+}
+
+.muted-text {
+  color: #999;
+}
+.played-track {
+  color: #1db954;
+}
+.song-name-table:hover {
+  color: #1db954;
+}
+
+.dots {
+  font-size: 3ch;
+}
+.bold-text {
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+}
+
+.jmb-position {
+  margin: 0;
+}
+.table-container-play {
+  height: 61%;
+}
