@@ -513,19 +513,32 @@ td {
 
 /* ARTIST PAGE TABLE CSS */
 
-body > div.container-fluid > div > div.col > div.col.mt-4 > div > table > thead > tr
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr
 {
  border-bottom: 1px solid rgb(82, 75, 75);
+ 
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-4 > div > table > thead > tr {
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr {
   height: 40px;
+  
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-4 > div > table > tbody > tr > td > p:nth-child(2) {
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td > p:nth-child(2) {
+  font-size: 10px;
+  color: #999;
+}
+
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(3) {
+font-size: 10px;
+color: #999;
+}
+
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr > th {
+  color: #999;
   font-size: 10px;
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-4 > div > table > tbody > tr > td:nth-child(3) {
-font-size: 10px;
+body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(1) {
+  color: #999;
 }
