@@ -70,3 +70,56 @@ input[type="password"] {
 ::placeholder {
   color: var(--spotify-white);
 }
+
+.login-button {
+  border: 1px solid grey;
+  background-color: #1db954 !important;
+  color: white !important;
+  font-size: 1ch !important;
+  letter-spacing: 0.1em;
+  margin: 10px 0 !important;
+  padding: 10px 70px !important;
+
+  border-radius: 25px !important;
+}
+
+.spotify-pass-link {
+  color: #1db954;
+  font-size: small;
+}
+
+.btn-sign-up {
+  border: 1px solid rgb(46, 46, 46) !important;
+  border-radius: 25px !important;
+  font-size: 1.2ch !important;
+  color: grey !important;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+}
+
+.new-section-line {
+  border-top: 1px solid var(--spotify-white);
+}
+
+.policy {
+  font-size: xx-small;
+  color: var(--spotify-white);
+}
+
+.spotify-pp-link {
+  color: #1db954;
+}
+
+.account {
+  font-size: medium;
+}
+
+.radio-color {
+  color: var(--spotify-white) !important;
+  font-size: small;
+  font-weight: 600;
+}
+
+.w-500-px {
+  width: 500px !important;
+}
