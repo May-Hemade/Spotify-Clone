@@ -24,6 +24,7 @@ body {
   font-weight: 400;
 }
 
+
 .Albumcard {
   background-color: #3a2626 !important;
 }
@@ -81,6 +82,7 @@ background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1
 background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
 }
+
 
 
 
