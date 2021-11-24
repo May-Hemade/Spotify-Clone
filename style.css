@@ -28,36 +28,21 @@ body {
   background-color: #3a2626 !important;
 }
 
-.navbar-nav .dropdown-menu {
-  inset: 0 auto auto -20px !important;
 
-}
-.ProfileBtn{
-  padding-left: 3% !important;
-padding-top: 0% !important;
-  color: white !important;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border: 1px solid gray;
-  height: 40px;
-  width: 170px;
-  background-color: #120202 !important;
 
-}
-.dropdown-menu li{
 
-color: white !important;
-}
+  
 
-td, tr{
+td,
+tr {
+
   color: white;
   font-size: 14px;
   border-color: #171717;
 }
 
-.artist-link, .song-duration {
+.artist-link,
+.song-duration {
   font-size: 10px;
 }
 
@@ -451,13 +436,16 @@ td {
   border: none;
 }
 
-.play-circle {
-  font-size: 4ch;
+.pause-icon {
+  font-size: 3ch;
+}
 
+.pause-btn {
+  background-color: #1db954;
+  border-radius: 50%;
   color: white;
-
-  padding: 13px;
-  position: relative;
+  width: 50px;
+  height: 50px;
 }
 
 .follow-btn {
@@ -483,14 +471,7 @@ td {
 .song-name-table:hover {
   color: #1db954;
 }
-.pause-btn {
-  background-color: #1db954;
-  border-radius: 50%;
-  border: 2px solid #1db954;
-  height: 60px;
-  width: 60px;
-  position: relative;
-}
+
 .dots {
   font-size: 3ch;
 }
@@ -501,4 +482,7 @@ td {
 
 .jmb-position {
   margin: 0;
+}
+.table-container-play {
+  height: 61%;
 }
