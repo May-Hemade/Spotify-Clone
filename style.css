@@ -248,7 +248,7 @@ tr {
     height: 4px;
     border-radius: 10px;
     width: 30%;
-    background-color: #999 !important;
+    background-color: #999;
 }
 
 .progress{
@@ -316,13 +316,13 @@ i:hover{
     
     width: 8em;
     height: 8em;
-    right: 0;
+    right: 0px;
     border-radius: 50%;
     background-color: #ddd;
     transform: translate(50%, calc(2px - 50%));
 }
-
-.volume-bar .progress-bar:hover .progress::after{
+ */
+/* .volume-bar .progress-bar:hover .progress::after{
     --size: .8em;
 } */
 
