@@ -35,6 +35,7 @@ body {
   opacity: 0.3;
 }
 
+
 .nextArrow img:hover{
   opacity: 0.3;
 }
@@ -80,6 +81,7 @@ background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1
 background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
 }
+
 
 
 td,
@@ -353,6 +355,7 @@ td, tr{
 
 .title:hover, .artist:hover {
     text-decoration: underline;
+
 }
 
 i:hover{
@@ -363,6 +366,7 @@ i:hover{
     transform: scale(1.1);
     color: #ddd;
 }
+
 
 /* .progress-bar:hover .progress::after{
     content: "";
@@ -572,6 +576,7 @@ td {
 
 #spacing-div {
   height: 7rem;
+
 }
 
 
@@ -605,4 +610,5 @@ body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead 
 
 body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(1) {
   color: #999;
+
 }
