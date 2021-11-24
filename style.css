@@ -29,6 +29,7 @@ body {
 }
 
 
+
 .ProfileBtn{
   padding-left: 3% !important;
 padding-top: 0% !important;
@@ -52,9 +53,10 @@ background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1
 background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
 }
+
+
 td,
 tr {
-
   color: white;
   font-size: 14px;
   border-color: #171717;
@@ -181,6 +183,7 @@ tr {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .song-bar {
@@ -502,6 +505,7 @@ td {
 .jmb-position {
   margin: 0;
 }
-.table-container-play {
-  height: 61%;
+
+#spacing-div {
+  height: 7rem;
 }
