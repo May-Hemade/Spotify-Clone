@@ -251,14 +251,14 @@ tr {
     height: 4px;
     border-radius: 10px;
     width: 30%;
-    background-color: #999 !important;
+    background-color: #999;
 }
 
 .progress{
     position: relative;
     height: 100%;
     width: 30%;
-    background-color: #999;
+    background-color: #ddd;
 }
 
 .other-features{
@@ -313,21 +313,21 @@ i:hover{
     color: #ddd;
 }
 
-.progress-bar:hover .progress::after{
+/* .progress-bar:hover .progress::after{
     content: "";
     position: absolute;
     
     width: 8em;
     height: 8em;
-    right: 0;
+    right: 0px;
     border-radius: 50%;
     background-color: #ddd;
     transform: translate(50%, calc(2px - 50%));
 }
-
-.volume-bar .progress-bar:hover .progress::after{
+ */
+/* .volume-bar .progress-bar:hover .progress::after{
     --size: .8em;
-}
+} */
 
 @media (max-width: 50em) {
     .song-bar, .other-features {
