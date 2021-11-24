@@ -41,7 +41,7 @@
                             <i class="bi bi-search text-muted"></i>Search
                         </a>
 
-                        <a class="" href="#">
+                        <a class="" href="login.html">
                             <i class="bi bi-collection-fill text-muted"></i>Library
                         </a>
                     </div>
@@ -87,11 +87,11 @@
                         <!-- Sumrooz's code supposed to be here ||||| check on browser -->
                         <div class="col d-flex position-absolute mt-3">
                             <div class="navbar-arrow d-flex">
-                                <div><img src="./images/Previous-Arrow--.png" alt="Profileimg"
-                                        class="img-fluid bg-light" width="30px;" height="30px;"
+                                <div class="PreviousArrow"><img src="./images/Previous-Arrow--.png" alt="Profileimg"
+                                        class="img-fluid " width="30px;" height="30px;"
                                         style="border-radius: 50%;"></div>
-                                <div> <img src="./images/next-arrow-2938996-2429434.png" alt="Profileimg"
-                                        class="img-fluid bg-light ml-3" width="30px;" height="30px;"
+                                <div class="nextArrow"> <img src="./images/next-arrow-2938996-2429434.png" alt="Profileimg"
+                                        class="img-fluid  ml-3" width="30px;" height="30px;"
                                         style="border-radius: 50%;"></div>
                             </div>
                             <div class="position-absolute d-flex profil-btn">
@@ -212,6 +212,7 @@
                         <h3 class="popular-title">Popular releases</h3>
                     </div>
                 </div>
+                <div id="spacing-div"></div>
 
 
                 <!-- END May's List -->
@@ -220,47 +221,48 @@
             </div>
             <div class="music-player">
                 <div class="song-bar">
-                    <div class="song-info">
-                        <div class="image-container">
-                            <img src="./assets/Dynasties-Dystopia-Lyrics-Denzel-Curry.jpg" alt="" width="35px" />
-                        </div>
-                        <div class="song-description">
-                            <p class="title">Dynasties & Dystopia</p>
-                            <p class="artist">Denzel curry</p>
-                        </div>
+                  <div class="song-infos">
+                    <div class="image-container">
+                      <img src="https://www.genius-lyrics.com/wp-content/uploads/2021/11/Dynasties-Dystopia-Lyrics-Denzel-Curry.jpg"
+                        alt="" />
                     </div>
-                    <div class="icons">
-                        <i class="bi bi-play-fill"></i>
-                        <i class="bi bi-play-fill"></i>
+                    <div class="song-description">
+                      <p class="title">Dynasties & Dystopia</p>
+                      <p class="artist">Denzel curry</p>
                     </div>
+                  </div>
+                  <div class="icons">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-pip"></i>
+                  </div>
                 </div>
                 <div class="progress-controller">
-                    <div class="control-buttons">
-                        <i class="bi bi-play-fill"></i>
-                        <i class="bi bi-play-fill"></i>
-                        <i class="bi bi-play-circle"></i>
-                        <i class="bi bi-play-fill"></i>
-                        <i class="bi bi-play-fill"></i>
+                  <div class="control-buttons mt-5 pb-0">
+                    <i class="bi bi-shuffle"></i>
+                    <i class="bi bi-skip-start-fill"></i>
+                    <i class="play-pause bi bi-play-circle-fill"></i>
+                    <i class="bi bi-skip-end-fill"></i>
+                    <i class="bi bi-arrow-repeat"></i>
+                  </div>
+                  <div class="progress-container mb-5 pt-0">
+                    <span>0:39</span>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
                     </div>
-                    <div class="progress-container">
-                        <span>0:39</span>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <span>2:58</span>
-                    </div>
+                    <span>2:58</span>
+                  </div>
                 </div>
-                <div class="other-features">
-                    <i class="bi bi-play-fill text-white"></i>
-                    <i class="bi bi-play-fill"></i>
-                    <div class="volume-bar">
-                        <i class="bi bi-play-fill"></i>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
+                <div class="other-features ">
+                  <i class="bi bi-list-ul"></i>
+                  <i class="bi bi-pc-display"></i>
+                  <div class="volume-bar">
+                    <i class="bi bi-volume-down-fill"></i>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
 
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
