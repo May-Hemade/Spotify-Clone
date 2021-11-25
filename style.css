@@ -24,20 +24,19 @@ body {
   font-weight: 400;
 }
 
-
 .Albumcard {
   background-color: #3a2626 !important;
 }
-.nextArrow , .PreviousArrow{
+.nextArrow,
+.PreviousArrow {
   position: relative;
 }
 
-.PreviousArrow img:hover{
+.PreviousArrow img:hover {
   opacity: 0.3;
 }
 
-
-.nextArrow img:hover{
+.nextArrow img:hover {
   opacity: 0.3;
 }
 
@@ -58,10 +57,9 @@ body {
   position: absolute;
 }
 
-
-.ProfileBtn{
+.ProfileBtn {
   padding-left: 3% !important;
-padding-top: 0% !important;
+  padding-top: 0% !important;
   color: white !important;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -71,20 +69,30 @@ padding-top: 0% !important;
   height: 40px;
   width: 170px;
   background-color: #120202 !important;
-
 }
 
-  
-.main-Body{
-  background: rgb(18,18,18);
-background: -moz-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
+.main-Body {
+  background: rgb(18, 18, 18);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 47%,
+    rgba(119, 42, 96, 1) 79%,
+    rgba(119, 42, 96, 1) 85%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 47%,
+    rgba(119, 42, 96, 1) 79%,
+    rgba(119, 42, 96, 1) 85%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 47%,
+    rgba(119, 42, 96, 1) 79%,
+    rgba(119, 42, 96, 1) 85%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
 }
-
-
-
 
 td,
 tr {
@@ -197,178 +205,174 @@ tr {
 
 @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 
-.music-player{
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 6rem;
-    padding: 1em;
-    color: #ddd;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    box-sizing: border-box;
-    font-family: "circular std book", sans-serif;
+.music-player {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 6rem;
+  padding: 1em;
+  color: #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  box-sizing: border-box;
+  font-family: "circular std book", sans-serif;
 }
 
-.song-bar{
-    position: absolute;
-    left: 1em;
+.song-bar {
+  position: absolute;
+  left: 1em;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.5rem;
-    width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 25%;
 }
 
-.song-infos{
-    display: flex;
-    align-items: center;
-    gap: 1em;
+.song-infos {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
-.image-container{
-    flex-shrink: 0;
-    width: 4.5em;
-    height: 4.5em;
+.image-container {
+  flex-shrink: 0;
+  width: 4.5em;
+  height: 4.5em;
 }
 
-.image-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.song-description p{
-    margin: 0.2em;
+.song-description p {
+  margin: 0.2em;
 }
 
-.title, 
-.artist{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
+.title,
+.artist {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
 .title {
-    color: #ddd;
+  color: #ddd;
 }
-.artist{
-    color: #999;
-}
-
-.icons{
-    display: flex;
-    gap: 1em;
-}
-.progress-controller{
-    
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    color:#999
+.artist {
+  color: #999;
 }
 
-.control-buttons{
-    display: flex;
-    align-items: center;
-    gap: 2em;
+.icons {
+  display: flex;
+  gap: 1em;
+}
+.progress-controller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  color: #999;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 .play-pause {
-    display: inline-block;  
-    color: white;
-    font-size: 2em;
-    border-radius: 50%;
-    
+  display: inline-block;
+  color: white;
+  font-size: 2em;
+  border-radius: 50%;
 }
 
-.progress-container{
-    width: 100%;
-    height: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+.progress-container {
+  width: 100%;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
-.progress-bar{
-    height: 4px;
-    border-radius: 10px;
-    width: 30%;
-    background-color: #999;
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #999;
 }
 
-.progress{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    background-color: #ddd;
+.progress {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: #ddd;
 }
 
-.other-features{
-    position: absolute;
-    right: 1em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+.other-features {
+  position: absolute;
+  right: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
-.volume-bar{
-    display: flex;
-    align-items: center;
-    gap: 0.7em;
+.volume-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
 }
 
-.volume-bar .progress-bar{
-    width: 6em;
+.volume-bar .progress-bar {
+  width: 6em;
 }
 
-
-.music-player{
-    color: #999;
+.music-player {
+  color: #999;
 }
 
-
-
-td, tr{
-    color: black;
-    font-size: 14px;
-    border-color: #171717;
+td,
+tr {
+  color: black;
+  font-size: 14px;
+  border-color: #171717;
 }
 
-.artist-link, .song-duration {
-    font-size: 10px;
+.artist-link,
+.song-duration {
+  font-size: 10px;
 }
 
-.progress-bar:hover .progress{
-    background-color: #2d5;
+.progress-bar:hover .progress {
+  background-color: #2d5;
 }
 
-.title:hover, .artist:hover {
-    text-decoration: underline;
-
+.title:hover,
+.artist:hover {
+  text-decoration: underline;
 }
 
-i:hover{
-    color: #ddd;
+i:hover {
+  color: #ddd;
 }
 
-.play-pause:hover{
-    transform: scale(1.1);
-    color: #ddd;
+.play-pause:hover {
+  transform: scale(1.1);
+  color: #ddd;
 }
-
 
 /* .progress-bar:hover .progress::after{
     content: "";
@@ -387,9 +391,10 @@ i:hover{
 } */
 
 @media (max-width: 50em) {
-    .song-bar, .other-features {
-    visibility:hidden;
-}
+  .song-bar,
+  .other-features {
+    visibility: hidden;
+  }
 }
 
 /* Don css starts here */
@@ -469,19 +474,29 @@ i:hover{
 /* Don's sideBar css ends here */
 
 /* Don's Jumbotron starts here for ARtists page */
-#buttonsID {
-  border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--spotify-white);
-}
+
 .jumbo-img {
-  opacity: 0.8;
+  opacity: 0.5;
+  max-height: 60vh;
+  object-fit: cover;
 }
+.btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255) !important;
+}
+#first-button:hover {
+  color: white;
+}
+.btn-group {
+  position: relative;
+  left: 50rem;
+}
+
 .verified-artist-container {
   position: absolute;
-  top: 32%;
-  left: 19%;
-  z-index: 2;
+  top: 28%;
+  left: 20%;
+  z-index: 1;
   font-size: smaller;
 }
 .verified-artist-container i {
@@ -491,13 +506,13 @@ i:hover{
   position: absolute;
   font-family: "Raleway", sans-serif;
   font-size: 58px;
-  top: 36%;
+  top: 31%;
   left: 19%;
   color: var(--spotify-white);
 }
 .jumbo-paragraph {
   position: absolute;
-  top: 47%;
+  top: 46%;
   left: 18%;
   font-family: "Rubik", sans-serif;
 }
@@ -505,7 +520,7 @@ i:hover{
 /* Don;s jumbo-style ends here */
 /* Sumroooz css starts here */
 
-.profil-btn {
+/* .profil-btn {
   left: 120vh;
   border: 1px solid rgba(128, 128, 128, 0);
   border-radius: 55px;
@@ -514,7 +529,7 @@ i:hover{
   padding-left: 0px;
   z-index: 1;
   padding: 0px;
-}
+} */
 /* End of Sumrooz's css */
 .table-image {
   height: 45px;
@@ -578,39 +593,86 @@ td {
 
 #spacing-div {
   height: 7rem;
-
 }
-
 
 /* ARTIST PAGE TABLE CSS */
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr
-{
- border-bottom: 1px solid rgb(82, 75, 75);
- 
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > thead
+  > tr {
+  border-bottom: 1px solid rgb(82, 75, 75);
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr {
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > thead
+  > tr {
   height: 40px;
-  
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td > p:nth-child(2) {
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > tbody
+  > tr
+  > td
+  > p:nth-child(2) {
   font-size: 10px;
   color: #999;
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(3) {
-font-size: 10px;
-color: #999;
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > tbody
+  > tr
+  > td:nth-child(3) {
+  font-size: 10px;
+  color: #999;
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead > tr > th {
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > thead
+  > tr
+  > th {
   color: #999;
   font-size: 10px;
 }
 
-body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(1) {
+body
+  > div.container-fluid
+  > div
+  > div.col
+  > div.col.mt-2
+  > div
+  > table
+  > tbody
+  > tr
+  > td:nth-child(1) {
   color: #999;
-
 }
