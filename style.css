@@ -25,6 +25,66 @@ body {
 }
 
 
+.Albumcard {
+  background-color: #3a2626 !important;
+}
+.nextArrow , .PreviousArrow{
+  position: relative;
+}
+
+.PreviousArrow img:hover{
+  opacity: 0.3;
+}
+
+
+.nextArrow img:hover{
+  opacity: 0.3;
+}
+
+.nextArrow img::after {
+  content: "";
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  position: absolute;
+}
+.PreviousArrow img::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.603);
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  position: absolute;
+}
+
+
+.ProfileBtn{
+  padding-left: 3% !important;
+padding-top: 0% !important;
+  color: white !important;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid gray;
+  height: 40px;
+  width: 170px;
+  background-color: #120202 !important;
+
+}
+
+  
+.main-Body{
+  background: rgb(18,18,18);
+background: -moz-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
+background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
+background: linear-gradient(0deg, rgba(18,18,18,1) 47%, rgba(119,42,96,1) 79%, rgba(119,42,96,1) 85%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#772a60",GradientType=1);
+}
+
+
+
 
 td,
 tr {
@@ -297,6 +357,7 @@ td, tr{
 
 .title:hover, .artist:hover {
     text-decoration: underline;
+
 }
 
 i:hover{
@@ -307,6 +368,7 @@ i:hover{
     transform: scale(1.1);
     color: #ddd;
 }
+
 
 /* .progress-bar:hover .progress::after{
     content: "";
@@ -516,6 +578,7 @@ td {
 
 #spacing-div {
   height: 7rem;
+
 }
 
 
@@ -549,4 +612,5 @@ body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > thead 
 
 body > div.container-fluid > div > div.col > div.col.mt-2 > div > table > tbody > tr > td:nth-child(1) {
   color: #999;
+
 }
