@@ -24,6 +24,19 @@ const playingNow = function () {
   }
 }
 
+const setUpPlayButton = function () {
+  let ppNode = document.querySelector("div.pause-btn")
+  ppNode.addEventListener("click", togglePlay)
+}
+
+const togglePlay = function () {
+  let btnNodes = document.getElementsByClassName("pause-icon")
+  for (let btnNode of btnNodes) {
+    btnNode.classList.toggle("d-none")
+  }
+}
+
 window.onload = () => {
   playingNow()
+  setUpPlayButton()
 }
