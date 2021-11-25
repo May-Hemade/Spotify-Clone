@@ -94,6 +94,7 @@ const showRecentlyPlayed = function () {
     containerNode.appendChild(colNode)
   }
 }
+
 window.onload = () => {
   showRecentlyPlayed()
 }
