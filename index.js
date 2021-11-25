@@ -31,7 +31,7 @@ let recentPlayedContent = [
   {
     title: "Classical Mozart",
     artist: "Mozart",
-    description: "Play the day away",
+    description: "Play the day away make it happen again",
     image: "images/liked songs.jpg",
   },
 
