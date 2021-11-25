@@ -29,7 +29,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Don's sideBar starts here -->
-            <div id="main-container" class="col-2">
+            <div id="main-container" class="col-2 px-0">
                 <div class="nav-main-box">
                     <div class="logo-container">
                         <img class="img-fluid my-4" src="/mp_assets/Spotify_Logo_RGB_White.png" alt="logo-container" />
@@ -86,49 +86,77 @@
                 <div class="jumbotron-fluid">
                     <div class="positon-relative jmb-position">
                         <!-- Sumrooz's code supposed to be here ||||| check on browser -->
-                        <div class="col d-flex mt-2 justify-content-between position-absolute">
-                            <div class="navbar-arrow d-flex ml-5 ">
-                                <div class="PreviousArrow"><img src="./images/Previous-Arrow--.png" alt="Profileimg"
-                                        class="img-fluid bg-secondary " width="30px;" height="30px;"
-                                        style="border-radius: 50%;"></div>
-                                <div class="nextArrow mx-2"> <img src="./images/next-arrow-2938996-2429434.png"
-                                        alt="Profileimg" class="img-fluid bg-secondary  ml-3" width="30px;"
-                                        height="30px;" style="border-radius: 50%;"></div>
+                        <div class="d-flex position-absolute mt-3">
+                            <div class="arrow-buttons mx-5">
+                                <button id="first-button" class="btn  rounded-circle ml-5" type="btn">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-chevron-left"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                                    />
+                                  </svg>
+                                </button>
+                                <button class="btn rounded-circle mx-2" type="btn">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-chevron-right"
+                                    viewBox="0 0 16 16"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                                    />
+                                  </svg>
+                                </button>
                             </div>
 
-                            <div class="mr-4">
-                                <ul class="navbar-nav">
-                                    <button class="ProfileBtn btn bg-dark ">
-                                        <li class="nav-item dropdown d-flex mb-2">
-                                            <div class="d-flex">
-                                                <img src="./images/Sherlock_Holmes_profilepic.jpeg" alt="Profileimg"
-                                                    class="mt-1" width="30px;" height="30px;"
-                                                    style="border-radius: 50%;">
-                                                <a class="nav-link dropdown-toggle mx-2 text-light" href="#"
-                                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    Sumrooz Zia
-                                                </a>
-                                                <ul class="dropdown-menu mx-2 text-light"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <li><a class="dropdown-item" href="login.html">Profile</a></li>
-                                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Help</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-
-                                    </button>
-
+                          
+                          <div class="btn-group ml-5">
+                            <button
+                              class="btn bg-black btn-sm dropdown-toggle rounded-pill border-0"
+                              type="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-person-circle"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                                />
+                              </svg>
+                              Diego Ziba Bano..
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        Log out
+                                    </li>
 
                                 </ul>
-
-
+                              <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
+                            </div>
                             </div>
                         </div>
+                    
 
                         <!-- Sumrooz code ends here -->
                         <div class="verified-artist-container">
@@ -193,7 +221,7 @@
                                                 class="oi oi-audio-spectrum d-none"></span></td>
                                         <td style="width: 150px"><img src="images/img5.jpg" class="table-image"></td>
                                         <td class="muted-text">Don't Stop Me Now</td>
-                                        </td>
+                                        
                                         <td class="muted-text">4,009,101,922</td>
                                         <td class="muted-text"> 4:34</td>
                                     </tr>
@@ -214,7 +242,7 @@
                                         <td class="muted-text">10,001,922</td>
                                         <td class="muted-text"> 1:34</td>
                                     </tr>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                             <a class="text-muted more-nav">SEE ALL </a>
