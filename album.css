@@ -29,6 +29,11 @@
     z-index: -1;
     position: absolute;
   }
+
+  .albumbody{
+
+    margin-left: 10%;
+  }
   
   
   .ProfileBtn{
