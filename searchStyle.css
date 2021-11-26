@@ -1,0 +1,168 @@
+/* body {
+  background-color: #0f0f0f;
+} */
+body {
+  max-height: fit-content;
+  background: linear-gradient(141deg, #0f0f0f 10%, #283530 65%, #2b0101 100%);
+}
+#plus-icon {
+  height: 2rem;
+}
+.top-search-container {
+  margin-top: 1rem;
+}
+
+/* USER DROPDOWN BUTTON */
+.btn {
+  background-color: #000000;
+  color: rgb(252, 252, 252);
+}
+.btn-group {
+  position: absolute;
+
+  left: 80%;
+}
+.recently-played-card {
+  position: relative;
+  background-color: #131313;
+}
+.cancel-button-bohemian {
+  position: absolute;
+  left: 88%;
+  top: 3%;
+  background-color: rgba(32, 32, 32, 0.329);
+}
+/* IMAGES */
+
+.dance-electric {
+  /* THIS IS FOR DANCE BOX */
+  background-color: #d10079;
+}
+
+.top-genres-box {
+  height: 220px;
+}
+
+.dance-electric {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.dance-box-header {
+  font-size: 30px;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.first-col-podcasts {
+  background-color: #217457;
+}
+.sec-col-madeforyou {
+  background-color: #172351;
+}
+.third-col-charts {
+  background-color: #90780a;
+}
+
+.forth-col-releases {
+  background-color: #df0049;
+}
+.fifth-col-discover {
+  background-color: #794f9b;
+}
+.sixth-col-concepts {
+  background-color: #172351;
+}
+.seventh-col-hiphop {
+  background-color: #ab480b;
+}
+.eights-col-mood {
+  background-color: #794f9b;
+}
+#last-boxes-color {
+  background-color: rgb(3, 231, 53);
+}
+.bottom-boxes {
+  min-height: 10rem;
+  min-width: 10rem;
+  font-weight: 400;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 0.8rem;
+}
+div.bottom-boxes:hover,
+div.bottom-boxes:active {
+  transform: rotate(-45deg);
+  transition: transform 20s;
+}
+.top-genres-container img {
+  width: 20%;
+  position: absolute;
+  transform: rotate(23deg);
+  left: 82%;
+  top: 50%;
+}
+
+.bottom-boxes img {
+  width: 30%;
+  position: absolute;
+  transform: rotate(23deg);
+  left: 73%;
+  top: 55%;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  position: absolute;
+  top: 3%;
+  left: 45%;
+}
+/* ========================================§TEST§ */
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
