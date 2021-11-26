@@ -318,7 +318,7 @@ tr {
 .progress {
   position: relative;
   height: 100%;
-  width: 30%;
+  width: 0;
   background-color: #ddd;
 }
 
@@ -366,7 +366,7 @@ tr {
 }
 
 i:hover {
-  color: #ddd;
+  color: #ddd !important;
 }
 
 .play-pause:hover {
@@ -683,5 +683,22 @@ body
   > tbody
   > tr
   > td:nth-child(1) {
+  color: #999;
+}
+
+
+/* functionalplayer css */
+
+.music-player > .progress-controller > .control-buttons > .action-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#prev > i {
+  color: #999;
+}
+
+#next > i {
   color: #999;
 }
