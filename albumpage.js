@@ -82,7 +82,7 @@ function updateProgress(e) {
 
 // Set progress bar
 function setProgress(e) {
-  const width = this.clientWidth;
+  const width = document.getElementById("progressbar").clientWidth;
   const clickX = e.offsetX;
   const duration = audio.duration;
 
