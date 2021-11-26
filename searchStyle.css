@@ -83,7 +83,7 @@ body {
   background-color: rgb(3, 231, 53);
 }
 .bottom-boxes {
-  min-height: 10rem;
+  min-height: 11rem;
   min-width: 10rem;
   font-weight: 400;
   border-radius: 12px;
@@ -92,8 +92,8 @@ body {
 }
 div.bottom-boxes:hover,
 div.bottom-boxes:active {
-  transform: rotate(-45deg);
-  transition: transform 20s;
+  transform: scale(1.2, 1.2);
+  transition: scale 5s ease-in-out;
 }
 .top-genres-container img {
   width: 20%;
