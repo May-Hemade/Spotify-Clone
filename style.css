@@ -409,6 +409,15 @@ i:hover {
   --spotify-dark-bg: #000000;
   --spotify-darker-bg: #121212;
 }
+.dropdown-menu a {
+  color: #333333;
+}
+.dropdown-menu a:hover {
+  text-decoration: none;
+  transition: color 0.5s;
+
+  color: rgb(255, 255, 255);
+}
 
 #main-container {
   background-color: var(--spotify-dark-bg);
