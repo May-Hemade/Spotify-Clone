@@ -171,6 +171,16 @@ const displayAlbumTitles = () => {
   myModal.show()
 }
 
+const countAlbums = () => {
+  const albums = {}
+  let titleNodes = document.getElementsByClassName("album-title")
+  for (let titleNode of titleNodes) {
+    albums[titleNode.innerText] = 1
+  }
+
+  console.log(Object.keys(albums).length)
+}
+
 window.onload = () => {
   showRecentlyPlayed()
   loadSongs("eminem", "eminem-container")
