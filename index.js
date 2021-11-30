@@ -137,7 +137,7 @@ const displaySongs = (songs, containerId) => {
     cardTitleNode.classList.add("card-title-music", "text-truncate")
     cardTitleNode.innerText = song.title_short
     let albumNode = document.createElement("p")
-    albumNode.classList.add("card-text", "truncate-2-lines")
+    albumNode.classList.add("card-text", "truncate-2-lines", "album-title")
     albumNode.innerText = song.album.title
 
     ratioNode.appendChild(imgNode)
@@ -151,6 +151,24 @@ const displaySongs = (songs, containerId) => {
     colNode.appendChild(cardNode)
     containerNode.appendChild(colNode)
   }
+}
+const displayAlbumTitles = () => {
+  let titleNodes = document.getElementsByClassName("album-title")
+
+  modalNode = document.getElementById("modal-title")
+  let headerList = document.createElement("ul")
+  modalNode.appendChild(headerList)
+  for (let titleNode of titleNodes) {
+    let albumTitleList = document.createElement("li")
+    albumTitleList.classList.add("text-dark")
+    albumTitleList.innerText = titleNode.innerText
+    headerList.appendChild(albumTitleList)
+  }
+  var myModal = new bootstrap.Modal(
+    document.getElementById("albumModal"),
+    "backdrop"
+  )
+  myModal.show()
 }
 
 window.onload = () => {
