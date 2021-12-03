@@ -132,6 +132,8 @@ INput label
             <!-- SEARCH INPUT GOES HERE -->
             <form class="form-inline align-self-start ml-5">
               <input
+                onsubmit="{}"
+                id="inputValue"
                 class="form-control rounded-pill"
                 type="search"
                 placeholder="Artists, songs, or podcasts"
@@ -499,6 +501,28 @@ INput label
         </div>
       </div>
     </div>
+
+    <script>
+      const searchQuery = document.getElementById("inputValue");
+
+      function searchFeature(query) {
+        fetch(
+          //fetching/getting data
+          `https://striveschool-api.herokuapp.com/api/deezer/search?q=${searchQuery}`,
+          {
+            method: "GET",
+          }
+        )
+          .then((response) => response.json()) //parsing data
+          .then((response) => {
+            console.log(response); //reading data
+          })
+
+          .catch((err) => {
+            console.error(err);
+          });
+      }
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
