@@ -89,82 +89,53 @@
                         <div class="d-flex position-absolute mt-3">
                             <div class="arrow-buttons mx-5">
                                 <button id="first-button" class="btn  rounded-circle ml-5" type="btn">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-chevron-left"
-                                    viewBox="0 0 16 16"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                                    />
-                                  </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
                                 </button>
                                 <button class="btn rounded-circle mx-2" type="btn">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-chevron-right"
-                                    viewBox="0 0 16 16"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                                    />
-                                  </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
                                 </button>
                             </div>
 
-                          
-                          <div class="btn-group ml-5">
-                            <button
-                              class="btn bg-black btn-sm dropdown-toggle rounded-pill border-0"
-                              type="button"
-                              data-toggle="dropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-person-circle"
-                                viewBox="0 0 16 16"
-                              >
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path
-                                  fill-rule="evenodd"
-                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                                />
-                              </svg>
-                              Diego Ziba Bano..
-                            </button>
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li>
-                                        Log out
-                                    </li>
 
-                                </ul>
-                              <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
-                            </div>
+                            <div class="btn-group ml-5">
+                                <button class="btn bg-black btn-sm dropdown-toggle rounded-pill border-0" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Diego Ziba Bano..
+                                </button>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            Log out
+                                        </li>
+
+                                    </ul>
+                                    <!-- DROPDOWN ACTIONS CAN BE ADDED IF NECESSARY ... -->
+                                </div>
                             </div>
                         </div>
-                    
+
 
                         <!-- Sumrooz code ends here -->
                         <div class="verified-artist-container">
                             <i class="jumbo-icon bi bi-patch-check-fill"></i>
                             <span class="verified-artist-text">Verified Artist</span>
                         </div>
-                        <img class="w-100 jumbo-img img-fluid" src="./images/jumbotron1.jpg" alt="">
-                        <h1 class="jumbo-title">Queen</h1>
+                        <img class="w-100 jumbo-img img-fluid" id="artist-image" src="./images/jumbotron1.jpg" alt="">
+                        <h1 class="jumbo-title" id="artist-name">Queen</h1>
                         <p class="jumbo-paragraph">37,120,733 listeners</p>
                     </div>
                 </div>
@@ -191,58 +162,9 @@
                             <h3> Popular</h3>
                             <table class="table">
 
-                                <tbody>
-                                    <tr class="tr-popular current-song">
-                                        <td class="played-track"><span class="track-number d-none">1</span><span
-                                                class="oi oi-audio-spectrum"></span></td>
-                                        <td style="width: 150px"><img src="images/img1.jpg" class="table-image"></td>
-                                        <td class="played-track muted-text">Another One Bites the Dust-Remastered 2011
-                                        </td>
-                                        <td class="muted-text">1,009,101,922</td>
-                                        <td class="muted-text"> 3:34</td>
-                                    </tr>
-                                    <tr class="tr-popular">
-                                        <td class="muted-text"> <span class="track-number">2</span><span
-                                                class="oi oi-audio-spectrum d-none"></span></td>
-                                        <td style="width: 150px"><img src="images/img2.jpg" class="table-image"></td>
-                                        <td class="muted-text">Rock the Boat </td>
-                                        <td class="muted-text">309,101,922</td>
-                                        <td class="muted-text"> 3:00</td>
-                                    </tr>
-                                    <tr class="tr-popular">
-                                        <td class="muted-text"> <span class="track-number">3</span><span
-                                                class="oi oi-audio-spectrum d-none"></span></td>
-                                        <td style="width: 150px"><img src="images/img9.jpg" class="table-image"></td>
-                                        <td class="muted-text">Bohemian Rhapsody</td>
-                                        <td class="muted-text">20,001,922</td>
-                                        <td class="muted-text"> 2:34</td>
-                                    <tr class="tr-popular">
-                                        <td class="muted-text"> <span class="track-number">4</span><span
-                                                class="oi oi-audio-spectrum d-none"></span></td>
-                                        <td style="width: 150px"><img src="images/img5.jpg" class="table-image"></td>
-                                        <td class="muted-text">Don't Stop Me Now</td>
-                                        
-                                        <td class="muted-text">4,009,101,922</td>
-                                        <td class="muted-text"> 4:34</td>
-                                    </tr>
-                                    <tr class="tr-popular">
-                                        <td class="muted-text"> <span class="track-number">5</span><span
-                                                class="oi oi-audio-spectrum d-none"></span></td>
-                                        <td style="width: 150px"><img src="images/img8.jpg" class="table-image"></td>
-                                        <td class="muted-text">Under Pressure-Remastered 2011 </td>
-                                        <td class="muted-text">10,091,014,522</td>
-                                        <td class="muted-text"> 3:47</td>
-                                    </tr>
+                                <tbody id="artist-songs">
 
-                                    <tr class="tr-popular">
-                                        <td class="muted-text"> <span class="track-number">6</span><span
-                                                class="oi oi-audio-spectrum d-none"></span></td>
-                                        <td style="width: 150px"><img src="images/img6.jpg" class="table-image"></td>
-                                        <td class="muted-text">We Will Rock You-Remastered </td>
-                                        <td class="muted-text">10,001,922</td>
-                                        <td class="muted-text"> 1:34</td>
-                                    </tr>
-                                    
+
                                 </tbody>
                             </table>
                             <a class="text-muted more-nav">SEE ALL </a>

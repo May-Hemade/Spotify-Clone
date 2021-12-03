@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="album.css" />
     <title>Spotify</title>
   </head>
+  <style>
+    .album-table tr:hover{
+      background-color: rgb(80, 80, 80);
+    }
+    .album-track-number{
+      padding-left: 15px;
+    }
+  </style>
 
   <body class="main-Body">
     <div class="container-fluid">
@@ -140,12 +148,12 @@
                   <div class="BohemianAlbum jumbotron mt-4 ml-5 justify-content-between ">
                     <div class="albumbody d-flex ml-4">
                         <div class=" mb-4">
-                            <img src="./images/bohemian-rhapsody-cover.png "  class="img-fluid" width="200px" height="200px">
+                            <img id="album-image-cover" src="./images/bohemian-rhapsody-cover.png "  class="img-fluid" width="200px" height="200px">
                         </div>
     
                         <div class="mt-5 mx-2">
                                 <p><small><b>Album</b></small></p>
-                                <h2 class="mt-0">David Bowie(The Orignal SoundTrack)</h2>
+                                <h2 class="mt-0" id="album-artist-name">David Bowie(The Orignal SoundTrack)</h2>
                                 <div class="d-flex">
                                     <img class="mx-1" src="./images/img10.jpg" alt="" height="30px" width="30px" style="border-radius: 50%;" >
                                     <div><span><small><b>Street King . 2020</b></small></span> <span><small><b> . 28 Songs . 1Hour 29 min</b></small></span></div>
@@ -225,60 +233,10 @@
                     <div class="col mt-2">
                         <div class="row playlist mx-4">
                             
-                                <table class="col-12">
-                                    <thead>
-                                        <th>#</th>
-                                        <th>TITLE</th>                    
-                                        <th><i class="bi bi-clock"></i></th>
-                                    </thead>
-                                
+                                <table class="col-12 album-table" id="album-artist-songs">
+                                   
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>2</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td><p class="mb-0 pt-3">20th Century Fox Fantare</p><p>Queen</p></td>                        
-                                            <td>0.25</td>
-                                        </tr>                    
+                                                           
                                     </tbody>
                                 </table>
                         </div>

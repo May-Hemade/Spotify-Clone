@@ -136,9 +136,16 @@ const displaySongs = (songs, containerId) => {
     let cardTitleNode = document.createElement("h6")
     cardTitleNode.classList.add("card-title-music", "text-truncate")
     cardTitleNode.innerText = song.title_short
-    let albumNode = document.createElement("p")
+
+    let artistNode = document.createElement("a")
+    artistNode.classList.add("card-text", "artist-name", "text-decoration-none")
+    artistNode.innerText = song.artist.name
+    artistNode.href = `artist.html?id=${song.artist.id}`
+
+    let albumNode = document.createElement("a")
     albumNode.classList.add("card-text", "truncate-2-lines", "album-title")
     albumNode.innerText = song.album.title
+    albumNode.href = `albumpage.html?id=${song.album.id}`
 
     ratioNode.appendChild(imgNode)
     imageContainerNode.appendChild(playButtonNode)
@@ -146,6 +153,7 @@ const displaySongs = (songs, containerId) => {
     cardNode.appendChild(imageContainerNode)
     cardNode.appendChild(cardBodyNode)
     cardBodyNode.appendChild(cardTitleNode)
+    cardBodyNode.appendChild(artistNode)
 
     cardBodyNode.appendChild(albumNode)
     colNode.appendChild(cardNode)
