@@ -20,6 +20,7 @@ const displayArtist = (artist) => {
   let artistNameNode = document.getElementById("artist-name")
   artistNameNode.innerText = artist.name
   let artistImageNode = document.getElementById("artist-image")
+
   artistImageNode.src = artist.picture_xl
   loadSongs(artist.name)
 }
@@ -54,7 +55,7 @@ const displaySongs = (songs) => {
   <td class="muted-text">${song.title}
   </td>
   <td class="muted-text">${song.rank}</td>
-  <td class="muted-text">${song.duration}</td>`
+  <td class="muted-text">${secToMin(song.duration)}</td>`
     artistSongsNode.appendChild(trNode)
   })
 
@@ -100,7 +101,9 @@ const togglePlay = function () {
     btnNode.classList.toggle("d-none")
   }
 }
-
+const secToMin = (value) => {
+  return Math.floor(value / 60) + ":" + (value % 60 ? value % 60 : "00")
+}
 window.onload = () => {
   const urlParams = new URLSearchParams(window.location.search)
   const artistId = urlParams.get("id")
