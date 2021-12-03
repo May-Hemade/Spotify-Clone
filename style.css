@@ -686,7 +686,6 @@ body
   color: #999;
 }
 
-
 /* functionalplayer css */
 
 .music-player > .progress-controller > .control-buttons > .action-btn {
@@ -701,4 +700,41 @@ body
 
 #next > i {
   color: #999;
+}
+
+a.album-title {
+  text-decoration: none;
+  color: gray;
+}
+
+a.album-title:visited {
+  text-decoration: none;
+}
+
+a.album-title:hover {
+  text-decoration: underline;
+  color: #f9f8ff;
+}
+
+a.album-title:active {
+  text-decoration: underline;
+}
+
+a.artist-name {
+  text-decoration: none;
+  color: #1db954;
+  font-weight: 600;
+}
+
+a.artist-name:visited {
+  text-decoration: none;
+}
+
+a.artist-name:hover {
+  text-decoration: underline;
+  color: #1db954;
+}
+
+a.artist-name:active {
+  text-decoration: underline;
 }
