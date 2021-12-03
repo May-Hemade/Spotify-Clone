@@ -138,12 +138,17 @@ const displaySongs = (songs, containerId) => {
     cardTitleNode.innerText = song.title_short
 
     let artistNode = document.createElement("a")
-    artistNode.classList.add("card-text", "artist-name", "text-decoration-none")
+    artistNode.classList.add("card-text", "artist-name")
     artistNode.innerText = song.artist.name
     artistNode.href = `artist.html?id=${song.artist.id}`
 
     let albumNode = document.createElement("a")
-    albumNode.classList.add("card-text", "truncate-2-lines", "album-title")
+    albumNode.classList.add(
+      "card-text",
+      "text-truncate",
+      "album-title",
+      "d-block"
+    )
     albumNode.innerText = song.album.title
     albumNode.href = `albumpage.html?id=${song.album.id}`
 
