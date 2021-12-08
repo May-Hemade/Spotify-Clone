@@ -503,25 +503,36 @@ INput label
     </div>
 
     <script>
+      //
       const searchQuery = document.getElementById("inputValue");
 
-      function searchFeature(query) {
+      function searchFeature() {
         fetch(
           //fetching/getting data
-          `https://striveschool-api.herokuapp.com/api/deezer/search?q=${searchQuery}`,
+          `https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem`,
           {
             method: "GET",
           }
         )
           .then((response) => response.json()) //parsing data
-          .then((response) => {
-            console.log(response); //reading data
-          })
+          .then((data) => {
+            console.log(data); //reading data
 
-          .catch((err) => {
-            console.error(err);
+            const queryResults = data.filter(
+              (data) => artist.title.includes(inputValue) === inputValue.value
+            );
+            console, log(queryResults());
           });
       }
+      // const filteredArray = response.filter((r) => {
+      //   return;
+      // });
+
+      // .catch((err) => {
+      //   console.error(err);
+      // });
+
+      searchFeature();
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
